@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pcs-3d-cb" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/pcs-3d-cb" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pcs-3d-cb" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../external/eigen/eigen/include" />
+			<Add directory="../gedim/src/core/IO" />
+			<Add directory="../gedim/src/core/geometry" />
+			<Add directory="../gedim/src/core/mpiTools" />
+			<Add directory="../gedim/src/core/common" />
+			<Add directory="../test" />
+		</Compiler>
+		<Linker>
+			<Add directory="../external/eigen/eigen/include" />
+			<Add directory="../gedim/src/core/IO" />
+			<Add directory="../gedim/src/core/geometry" />
+			<Add directory="../gedim/src/core/mpiTools" />
+			<Add directory="../gedim/src/core/common" />
+			<Add directory="../test" />
+		</Linker>
+		<Unit filename="../gedim/src/core/IO/ConfigFile.cpp" />
+		<Unit filename="../gedim/src/core/IO/ConfigFile.hpp" />
+		<Unit filename="../gedim/src/core/IO/CsvExporter.cpp" />
+		<Unit filename="../gedim/src/core/IO/CsvExporter.hpp" />
+		<Unit filename="../gedim/src/core/IO/EigenExtension.cpp" />
+		<Unit filename="../gedim/src/core/IO/EigenExtension.hpp" />
+		<Unit filename="../gedim/src/core/IO/EncodeBase64.cpp" />
+		<Unit filename="../gedim/src/core/IO/EncodeBase64.hpp" />
+		<Unit filename="../gedim/src/core/IO/ICsvExport.hpp" />
+		<Unit filename="../gedim/src/core/IO/IIniExport.hpp" />
+		<Unit filename="../gedim/src/core/IO/IniExporter.cpp" />
+		<Unit filename="../gedim/src/core/IO/IniExporter.hpp" />
+		<Unit filename="../gedim/src/core/IO/Input.cpp" />
+		<Unit filename="../gedim/src/core/IO/Input.hpp" />
+		<Unit filename="../gedim/src/core/IO/InputProperty.hpp" />
+		<Unit filename="../gedim/src/core/IO/InputPropertySupportedTypes.hpp" />
+		<Unit filename="../gedim/src/core/IO/Output.cpp" />
+		<Unit filename="../gedim/src/core/IO/Output.hpp" />
+		<Unit filename="../gedim/src/core/IO/StringUtilities.cpp" />
+		<Unit filename="../gedim/src/core/IO/StringUtilities.hpp" />
+		<Unit filename="../gedim/src/core/IO/UnitTestResult.cpp" />
+		<Unit filename="../gedim/src/core/IO/UnitTestResult.hpp" />
+		<Unit filename="../gedim/src/core/IO/UnitTestSummary.cpp" />
+		<Unit filename="../gedim/src/core/IO/UnitTestSummary.hpp" />
+		<Unit filename="../gedim/src/core/common/DefineNumbers.hpp" />
+		<Unit filename="../gedim/src/core/common/MacroDefinitions.hpp" />
+		<Unit filename="../gedim/src/core/geometry/GeometricObject.hpp" />
+		<Unit filename="../gedim/src/core/geometry/IGeometricObject.hpp" />
+		<Unit filename="../gedim/src/core/geometry/IPolygon.hpp" />
+		<Unit filename="../gedim/src/core/geometry/IPolyhedron.hpp" />
+		<Unit filename="../gedim/src/core/geometry/IRotation.cpp" />
+		<Unit filename="../gedim/src/core/geometry/IRotation.hpp" />
+		<Unit filename="../gedim/src/core/geometry/ISegment.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector1D1D.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector1D1D.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector2D1D.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector2D1D.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector2D2D.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Intersector2D2D.hpp" />
+		<Unit filename="../gedim/src/core/geometry/IntersectorPolygonLine.cpp" />
+		<Unit filename="../gedim/src/core/geometry/IntersectorPolygonLine.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Measurer.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Measurer.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Polygon.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Polygon.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Polyhedron.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Polyhedron.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Segment.cpp" />
+		<Unit filename="../gedim/src/core/geometry/Segment.hpp" />
+		<Unit filename="../gedim/src/core/geometry/Vertex.hpp" />
+		<Unit filename="../gedim/src/core/mpiTools/MPI_Process.cpp" />
+		<Unit filename="../gedim/src/core/mpiTools/MPI_Process.hpp" />
+		<Unit filename="../gedim/src/core/mpiTools/ParallelEnvironment.cpp" />
+		<Unit filename="../gedim/src/core/mpiTools/ParallelEnvironment.hpp" />
+		<Unit filename="../main.cpp" />
+		<Unit filename="../test/ConcaveToConvex.cpp" />
+		<Unit filename="../test/ConcaveToConvex.hpp" />
+		<Unit filename="../test/geometryUnitTest.cpp" />
+		<Unit filename="../test/geometryUnitTest.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
